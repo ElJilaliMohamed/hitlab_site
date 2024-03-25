@@ -5,14 +5,7 @@
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-.nav-link {
-  color: $color-white;
-  font-size: 1.2rem;
-}
-.navbar-nav .nav-link.active {
-  color: $color-white;
 
-}
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -24,8 +17,14 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.c-nav {
-  background-color: $color-primary-blue;
+.c-about {
+  &__blok1 {
+    margin-top: -1.65rem;
+    color: $color-white;
+    background-color: $color-primary-blue;
+    opacity: 80%;
+    padding: 1.5rem;
+  }
 }
 /*---------------------------------------/*
  # UTILITIES

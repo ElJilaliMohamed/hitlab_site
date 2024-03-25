@@ -5,18 +5,14 @@
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-.nav-link {
-  color: $color-white;
-  font-size: 1.2rem;
-}
-.navbar-nav .nav-link.active {
-  color: $color-white;
 
-}
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
-
+header {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: $color-white;
+}
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -24,9 +20,18 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.c-nav {
-  background-color: $color-primary-blue;
+.c-header {
+  &__title {
+    font-size: $header-title;
+    font-weight: $fw-semibold;
+    margin-top: 7.3rem;
+  }
+  &__quote {
+    margin-top: -1rem;
+    font-size: $header-quote;
+  }
 }
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
