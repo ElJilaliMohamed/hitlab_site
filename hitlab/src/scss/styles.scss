@@ -1,4 +1,4 @@
-@import "bootstrap/scss/bootstrap";
-
-@import "components.header";
-@import "generic";
+@import 'generic';
+@import 'settings';
+@import 'bootstrap/scss/bootstrap';
+@import 'components.navigation';
