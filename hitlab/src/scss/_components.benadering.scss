@@ -19,12 +19,40 @@
 /*---------------------------------------*/
 .c-benadering {
   background-color: $color-grey-background;
-  margin-top: 8rem;
+  padding-bottom: 3rem;
   &__visie {
+    margin-top: 3rem;
+    margin-left: -3rem;
     color: $color-white;
     background-color: $color-primary-blue;
     opacity: 80%;
     padding: 1.5rem;
+  }
+  &__doelen {
+    margin-top: 5rem;
+    margin-right: -3rem;
+    color: $color-white;
+    background-color: $color-primary-blue;
+    opacity: 80%;
+    padding: 1.5rem;
+  }
+  &__collection1 {
+    @media (min-width: 1400px) {
+      justify-content: center;
+    }
+  }
+  &__collection2 {
+    margin-top: 6rem;
+    @media (min-width: 1400px) {
+      justify-content: center;
+    }
+  }
+  &__btn {
+    background-color: $color-primary-blue;
+    padding: 1rem;
+    font-size: $button-size;
+    text-decoration: none;
+    color: $color-white;
   }
 }
 /*---------------------------------------/*
