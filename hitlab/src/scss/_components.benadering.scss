@@ -9,10 +9,7 @@
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
-header {
-  background-color: $color-grey-background;
-  color: $color-white;
-}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -20,18 +17,16 @@ header {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.c-header {
-  &__title {
-    font-size: $header-title;
-    font-weight: $fw-semibold;
-    margin-top: 7.3rem;
-  }
-  &__quote {
-    margin-top: -1rem;
-    font-size: $header-quote;
+.c-benadering {
+  background-color: $color-grey-background;
+  margin-top: 8rem;
+  &__visie {
+    color: $color-white;
+    background-color: $color-primary-blue;
+    opacity: 80%;
+    padding: 1.5rem;
   }
 }
-
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
