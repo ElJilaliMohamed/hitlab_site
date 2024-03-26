@@ -27,6 +27,10 @@
     background-color: $color-primary-blue;
     opacity: 80%;
     padding: 1.5rem;
+    @media (max-width: 992px) {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
   }
   &__doelen {
     margin-top: 5rem;
@@ -35,6 +39,9 @@
     background-color: $color-primary-blue;
     opacity: 80%;
     padding: 1.5rem;
+    @media (max-width: 992px) {
+      margin-right: 0;
+    }
   }
   &__collection1 {
     @media (min-width: 1400px) {
@@ -48,11 +55,27 @@
     }
   }
   &__btn {
-    background-color: $color-primary-blue;
-    padding: 1rem;
+    transition: 0.2s;
+    background-color: $color-secondary-blue;
+    padding: 1.3rem;
     font-size: $button-size;
     text-decoration: none;
     color: $color-white;
+    font-weight: $fw-light;
+    position: relative;
+
+    z-index: 1;
+    &::before {
+      content: ' ';
+      position: absolute;
+      padding: 1rem;
+      top: 20%;
+      left: 4%;
+      width: 100%;
+      height: 100%;
+      background-color: $color-primary-blue;
+      z-index: -1;
+    }
   }
 }
 /*---------------------------------------/*
