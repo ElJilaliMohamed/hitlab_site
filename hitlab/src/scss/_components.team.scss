@@ -1,15 +1,16 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-@import 'settings';
+
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-@import 'generic';
-
-@import 'bootstrap/scss/bootstrap';
-@import "bootstrap-icons/font/bootstrap-icons.css";
-
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -21,11 +22,31 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-@import 'components.navigation';
-@import 'components.header';
-@import 'components.about';
-@import 'components.benadering';
-@import 'components.team';
+.c-card {
+  border: none;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.2);
+
+  &__avatar {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__avatar img {
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  &__arrow a {
+    font-size: 1.875rem;
+    color: $color-black;
+  }
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
