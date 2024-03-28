@@ -1,0 +1,16 @@
+.c-projects {
+  margin-top: 5rem;
+  &__nav {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: 17.5%;
+  }
+  &__line {
+    margin-top: 10rem;
+    border: 3px solid $color-black;
+    height: 2px;
+    width: 100%;
+  }
+}
