@@ -1,0 +1,44 @@
+.c-jobs {
+  &__vacatures {
+    &--xr {
+      color: $color-white;
+      background-color: $color-tertiare-blue;
+      padding: 2rem 0 0rem 3.2rem;
+      position: relative;
+      @media (max-width: 576px) {
+        padding: 2rem 1rem 0 1.3rem;
+      }
+
+      &::before {
+        content: ' ';
+        position: absolute;
+        padding: 1rem;
+        top: 6.7%;
+        left: 2%;
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary-blue;
+        z-index: -1;
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+    }
+    &--title {
+      font-size: $header-title;
+      font-weight: $fw-semibold;
+    }
+    &--text {
+      padding-right: 1.5rem;
+    }
+    &--open {
+      margin: 1rem;
+      color: $color-white;
+      background-color: $color-tertiare-blue;
+      padding: 2rem 0 0rem 3.2rem;
+      @media (max-width: 576px) {
+        padding: 2rem 1rem 0 1.3rem;
+      }
+    }
+  }
+}
