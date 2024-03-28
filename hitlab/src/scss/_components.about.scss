@@ -19,15 +19,15 @@
 /*---------------------------------------*/
 .c-about {
   &__blok1 {
-    margin-top: -1.2rem;
+    margin-top: -2rem;
     color: $color-white;
+    height: 230px;
     background-color: $color-primary-blue;
     opacity: 80%;
     padding: 1.5rem;
     @media (max-width: 992px) {
-       margin-top: 3rem;
+      margin-top: 3rem;
     }
-    
   }
 }
 /*---------------------------------------/*
