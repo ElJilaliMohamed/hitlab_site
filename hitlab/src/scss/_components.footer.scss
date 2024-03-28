@@ -1,15 +1,10 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-@import 'settings';
+
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-@import 'generic';
-
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons.css';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*---------------------------------------/*
  # ELEMENTS
@@ -22,13 +17,14 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-@import 'components.navigation';
-@import 'components.header';
-@import 'components.about';
-@import 'components.benadering';
-@import 'components.team';
-@import 'components.contact';
-@import 'components.footer';
+.c-footer {
+  color: $color-white;
+  background-color: $color-primary-blue;
+  margin-top: 6.3rem;
+  &__projecten {
+    margin-top: 1.8rem;
+  }
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
