@@ -12,5 +12,14 @@
     border: 3px solid $color-black;
     height: 2px;
     width: 100%;
+    &--show {
+      margin-top: 10rem;
+      border: 2px solid $color-grey;
+      height: 2px;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: $header-title;
   }
 }
