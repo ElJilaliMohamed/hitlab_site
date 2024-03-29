@@ -1,7 +1,23 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
@@ -47,9 +63,20 @@
     font-size: 1.875rem;
     color: $color-black;
   }
+  &__btn {
+    font-size: 2.1rem;
+    border: none;
+    color: $color-primary-blue;
+    font-weight: $fw-medium;
+    background: none;
+    animation: wiggle 2.3s ease-in-out infinite;
+    &--rotate {
+      rotate: 180deg;
+    }
+  }
 }
-.c-hidden{
-  visibility: hidden;
+.c-hidden {
+  display: none;
 }
 /*---------------------------------------/*
  # UTILITIES
