@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HIT Lab | Home</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/621470b37b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -53,10 +56,11 @@
             <div class="row">
                 <div class="col-12 col-md-7">
                     <div class="c-header">
-                        <h1 class="c-header__title">Human Interface Technology</h1>
+                        <h1 class="c-header__title"><span class=" js-typing">Human Interface Technology</span></h1>
+
                         <p class="c-header__quote">Ontdek de kracht van VR</p>
                         <div class="c-header__text">
-                            <p class="mt-5">In het HITlab van Howest University of Applied Sciences draait alles om menselijke interactie met technologie. Ze meten gedrags- en fysiologische reacties en ontwikkelen adaptieve applicaties met behulp van geavanceerde apparatuur zoals eye-tracking en EEG. Ook maken ze gebruik van VR- en AR-systemen en voeren ze onderzoek uit in sectoren zoals ergotherapie en industrie 4.0.</p>
+                            <p class="mt-5">In het HITlab van Howest University of Applied Sciences draait alles om menselijke interactie met technologie. Wij meten gedrags- en fysiologische reacties en ontwikkelen adaptieve applicaties met behulp van geavanceerde apparatuur zoals eye-tracking en EEG. Ook maken we gebruik van VR- en AR-systemen en voeren we onderzoek uit in sectoren zoals ergotherapie en industrie 4.0.</p>
                         </div>
 
                     </div>
@@ -112,11 +116,12 @@
 
     <div class="container" id="vision">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 c-vision mt-5">
                 <h2>Visie & Doelen</h2>
             </div>
         </div>
     </div>
+    <span class="c-vision__line"></span>
     <section class="c-benadering mt-3">
         <div class="container">
             <div class="row justify-content-center pt-5">
@@ -157,14 +162,19 @@
             </div>
         </div>
         <div class="text-center mt-5">
-            <a href="#" class="c-benadering__btn">Meer info over onze projecten</a>
+            <a href="projects.html" class="c-benadering__btn">Meer info over onze projecten</a>
         </div>
     </section>
 
     <section class="mt-5" id="team">
         <div class="container">
             <div class="row">
-                <h2 class="mb-4">Ons Team</h2>
+                <h2 class="mb-4 c-team">Ons Team</h2>
+            </div>
+        </div>
+        <span class="c-team__line"></span>
+        <div class="container">
+            <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card c-card">
                         <div class="card-body text-center">
@@ -270,50 +280,50 @@
 
             </div>
         </div>
+
     </section>
 
     <section>
         <div class="container" id="contact">
             <div class="row">
-                <h2>Contacteer ons</h2>
+                <h2 class="c-contact">Contacteer ons</h2>
             </div>
         </div>
-        <div class="container">
-            <div class="c-contact">
-                <div class="c-contact__grid">
-                    <div class="c-contact__bezoek">
-                        <h2 class="mb-3">Kom ons bezoeken</h2>
+        <span class="c-contact__line"></span>
+        <div class="container mt-5">
+            <div class="c-contact__grid">
+                <div class="c-contact__bezoek">
+                    <h2 class="mb-3">Kom ons bezoeken</h2>
 
-                        <p class="c-contact__info">Bikestore</p>
-                        <p class="c-contact__info">
-                            Wilhelminaweg 8 / Postbus 1
-                        </p>
-                        <p class="c-contact__info">
-                            6951 BP Dieren / 6950 AA Dieren
+                    <p class="c-contact__info">Howest, The Penta</p>
+                    <p class="c-contact__info">
+                        Marksesteenweg 58
+                    </p>
+                    <p class="c-contact__info">
+                        8500 Kortijk
 
-                        </p>
-                        <p class="c-contact__info">Nederland</p>
-                    </div>
+                    </p>
+                    <p class="c-contact__info">België</p>
+                </div>
 
-                    <div class="c-contact__mail">
-                        <div class="d-flex pl-5">
-                            <i class="fa-solid fa-envelope"></i>
-                            <h2 class="mb-3">Mail ons</h2>
-                        </div>
-                        <p class="c-contact__info">contact@bikestore.be</p>
+                <div class="c-contact__mail">
+                    <div class="d-flex pl-5">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2 class="mb-3">Mail ons</h2>
                     </div>
-                    <div class="c-contact__bel">
-                        <div class="d-flex pl-5">
-                            <i class="fa-solid fa-phone"></i>
-                            <h2 class="mb-3">Bel ons</h2>
-                        </div>
-                        <p class="c-contact__info">+32 (0)7 848 23 52</p>
+                    <p class="c-contact__info">hitlab@howest.be</p>
+                </div>
+                <div class="c-contact__bel">
+                    <div class="d-flex pl-5">
+                        <i class="fa-solid fa-phone"></i>
+                        <h2 class="mb-3">Bel ons</h2>
                     </div>
-                    <div class="c-contact__faq">
-                        <div class="col-12 col-lg-4">
-                            <div class="c-form__map">
-                                <iframe class="mt-4 c-form__frame" height="395" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.3617182319117!2d3.2499078163012314!3d50.82446356822465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33ae8e2f25e85%3A0x646cb9be10886f89!2sGraaf%20Karel%20de%20Goedelaan%2032%2C%208500%20Kortrijk!5e0!3m2!1snl!2sbe!4v1614356086762!5m2!1snl!2sbe"></iframe>
-                            </div>
+                    <p class="c-contact__info">+32 (0)7 848 23 52</p>
+                </div>
+                <div class="c-contact__faq">
+                    <div class="col-12 col-lg-4">
+                        <div class="c-form__map">
+                            <iframe class="mt-4 c-form__frame" height="395" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.3617182319117!2d3.2499078163012314!3d50.82446356822465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33ae8e2f25e85%3A0x646cb9be10886f89!2sGraaf%20Karel%20de%20Goedelaan%2032%2C%208500%20Kortrijk!5e0!3m2!1snl!2sbe!4v1614356086762!5m2!1snl!2sbe"></iframe>
                         </div>
                     </div>
                 </div>

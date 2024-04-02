@@ -80,6 +80,30 @@
 .c-hidden {
   display: none;
 }
+.c-team {
+  &__line {
+    position: relative;
+    margin-top: -1rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 2px;
+    width: 32%;
+    margin-bottom: 2rem;
+    border: 2px solid $color-black;
+    &:after {
+      content: '';
+      border: 3px solid $color-black;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      top: 0;
+      right: -1rem;
+      transform: translate(50%, -50%);
+    }
+  }
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
