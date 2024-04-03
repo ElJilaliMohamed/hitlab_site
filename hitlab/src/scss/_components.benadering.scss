@@ -74,7 +74,6 @@
       background-color: $color-primary-blue;
       z-index: -1;
       @media (max-width: 576px) {
-
         left: 2%;
       }
     }
@@ -91,7 +90,7 @@
     left: 0;
     display: flex;
     height: 2px;
-    width: 32%;
+    width: 40%;
     border: 2px solid $color-black;
     &:after {
       content: '';
@@ -106,6 +105,20 @@
     }
   }
 }
+
+.c-animation {
+  opacity: 0;
+  filter: blur(0.3125rem);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.c-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/

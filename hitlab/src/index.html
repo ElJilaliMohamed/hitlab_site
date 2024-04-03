@@ -58,7 +58,7 @@
                     <div class="c-header">
                         <h1 class="c-header__title"><span class=" js-typing">Human Interface Technology</span></h1>
 
-                        <p class="c-header__quote">Ontdek de kracht van VR</p>
+                        <p class="c-header__quote c-animation">Ontdek de kracht van VR</p>
                         <div class="c-header__text">
                             <p class="mt-5">In het HITlab van Howest University of Applied Sciences draait alles om menselijke interactie met technologie. Wij meten gedrags- en fysiologische reacties en ontwikkelen adaptieve applicaties met behulp van geavanceerde apparatuur zoals eye-tracking en EEG. Ook maken we gebruik van VR- en AR-systemen en voeren we onderzoek uit in sectoren zoals ergotherapie en industrie 4.0.</p>
                         </div>
@@ -116,12 +116,12 @@
 
     <div class="container" id="vision">
         <div class="row">
-            <div class="col-12 c-vision mt-5">
+            <div class="col-12 c-vision mt-5 ">
                 <h2>Visie & Doelen</h2>
             </div>
         </div>
     </div>
-    <span class="c-vision__line"></span>
+    <span class="c-vision__line c-animation"></span>
     <section class="c-benadering mt-3">
         <div class="container">
             <div class="row justify-content-center pt-5">
@@ -172,7 +172,7 @@
                 <h2 class="mb-4 c-team">Ons Team</h2>
             </div>
         </div>
-        <span class="c-team__line"></span>
+        <span class="c-team__line c-animation"></span>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -289,7 +289,7 @@
                 <h2 class="c-contact">Contacteer ons</h2>
             </div>
         </div>
-        <span class="c-contact__line"></span>
+        <span class="c-contact__line c-animation"></span>
         <div class="container mt-5">
             <div class="c-contact__grid">
                 <div class="c-contact__bezoek">
@@ -333,25 +333,27 @@
     <div class="container">
         <div class="row">
             <div class="c-contact__form mt-5">
-                <div class="mb-3 p-3">
-                    <label for="exampleFormControlInput1" class="form-label">Voornaam</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Typ hier je voornaam">
-                </div>
-                <div class="mb-3 p-3">
-                    <label for="exampleFormControlInput2" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Typ hier je naam">
-                </div>
-                <div class="mb-3 p-3">
-                    <label for="exampleFormControlInput3" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Typ hier je e-mail">
-                </div>
-                <div class="mb-3 p-3">
-                    <label for="exampleFormControlTextarea" class="form-label">Bericht</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Typ hier je bericht" rows="5"></textarea>
-                </div>
-                <div class="col-12 col-md-3">
-                    <button class="btn primary-btn c-contact__form--btn">VERZEND BERICHT</button>
-                </div>
+                <form action="https://formspree.io/f/mjvnadoq" method="POST">
+                    <div class="mb-3 p-3">
+                        <label for="firstname" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" name="first" id="firstname" placeholder="Typ hier je voornaam" required>
+                    </div>
+                    <div class="mb-3 p-3">
+                        <label for="lastname" class="form-label">Naam</label>
+                        <input type="text" class="form-control" name="last" id="lastname" placeholder="Typ hier je naam">
+                    </div>
+                    <div class="mb-3 p-3">
+                        <label for="e-mail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" name="e-mail address" id="e-mail" placeholder="Typ hier je e-mail" required>
+                    </div>
+                    <div class="mb-3 p-3">
+                        <label for="Textarea" class="form-label">Bericht</label>
+                        <textarea class="form-control" name="textarea" id="Textarea" placeholder="Typ hier je bericht" rows="5" required></textarea>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <button class="btn primary-btn c-contact__form--btn" type="submit">VERZEND BERICHT</button>
+                    </div>
+                </form>
             </div>
 
         </div>
