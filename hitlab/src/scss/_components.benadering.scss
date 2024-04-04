@@ -63,6 +63,10 @@
     font-weight: $fw-light;
     position: relative;
     z-index: 1;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(0.5rem);
+    }
     &::before {
       content: ' ';
       position: absolute;
@@ -103,6 +107,9 @@
       right: -1rem;
       transform: translate(50%, -50%);
     }
+  }
+  &__img {
+    animation: wiggle 5s ease-in-out infinite;
   }
 }
 

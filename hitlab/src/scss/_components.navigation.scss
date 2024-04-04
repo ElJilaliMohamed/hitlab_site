@@ -25,6 +25,10 @@
 /*---------------------------------------*/
 .c-nav {
   background-color: $color-primary-blue;
+  &__active {
+    text-decoration: underline 0.125rem;
+    color: $color-white;
+  }
 }
 /*---------------------------------------/*
  # UTILITIES

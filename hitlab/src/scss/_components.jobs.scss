@@ -136,6 +136,9 @@
     &--title {
       font-size: $header-title;
       font-weight: $fw-semibold;
+      @media (max-width: 768px) {
+        font-size: $news-title;
+      }
     }
     &--text {
       padding-right: 1.5rem;
